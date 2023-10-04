@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+        #myForm{
+            width: 480px;
+            height: 450px;
+            margin: auto;
+            margin-top: 120px;
+            border-radius: 20px;
+            box-shadow: 2px 3px 5px black;
+            padding: 20px;
+        }
+        .error{
+          color: red;
+        }
+        .danger{
+            border-color: red;
+        }
+        .success{
+          color: green;
+        }
+        .success1{
+          border-color: green;
+        }
+        a{
+          text-decoration: none;
+          margin-left: 290px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <form id="myForm">
+            <h2 class="success text-center">Sign Up</h2>
+              <h3 class="state"></h3>
+                <div class="mb-3">
+                  <label for="exampleInputName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Please enter your name">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your email">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Please enter your password">
+                </div>
+                <div class="mb-3 form-check text-center me-5">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <a href="loginpage.html" class="success">Click here to login</a>
+              </form>
+        </div>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+        #myForm{
+            width: 480px;
+            height: 390px;
+            margin: auto;
+            margin-top: 120px;
+            border-radius: 20px;
+            box-shadow: 2px 3px 5px black;
+            padding: 20px;
+        }
+        .error{
+          color: red;
+        }
+        .danger{
+            border-color: red;
+        }
+        .success{
+          color: green;
+        }
+        .success1{
+          border-color: green;
+        }
+        button{
+          margin-left: 180px;
+          margin-top: 0px;
+          margin-bottom: 30px;
+        }
+        .product{
+          display: none;
+        }
+        .displayProduct {
+          margin-left: 220px;
+          text-decoration: none;
+          color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <form id="myForm">
+            <h2 class="success text-center">Login</h2>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Please enter your email">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Please enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <div>
+                  <a href="signup.html" class="success" style="text-decoration: none; margin-left: 220px;">Dont't have an account login</a>
+                  <a href="index.html" class="product" id="continue">Continue shopping</a>
+                </div>
+              </form>
+        </div>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="loginpage.js"></script>
+</body>
+</html>
